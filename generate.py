@@ -9,8 +9,8 @@ password = ""
 for loop in range(i):
     random_choice = [random.choice(string.ascii_letters), random.choice(string.digits), random.choice(string.punctuation)]
     random_number = random.randint(0,2)
-    pass = random_choice[random_number]
-    password += pass
+    str_pass = random_choice[random_number]
+    password += str_pass
 print("Votre mot de passe : \n" + password + "\n")
 
 string = input("Voulez vous copier le mot de passe au press-papier ? (Y/n):").upper()
